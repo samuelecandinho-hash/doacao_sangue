@@ -1,0 +1,55 @@
+div {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+select:invalid {
+  color: gray;
+}
+
+input[type="number"] {
+  width: 200px;
+}
+
+input+span {
+  padding-right: 30px;
+}
+
+input:invalid+span::after {
+  position: absolute;
+  content: "✖";
+  padding-left: 5px;
+  color: rgb(0, 0, 0);
+}
+
+input:valid+span::after {
+  position: absolute;
+  content: "✓";
+  padding-left: 5px;
+  color: #000000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+form {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #dd7d7273;
+}
+
+body {
+  background-color: #b9574c;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
